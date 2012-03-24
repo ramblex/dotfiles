@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pngcrush -rem cHRM -rem gAMA -rem iCCP -rem sRGB $1 $1_temp
+
+mv $1_temp $1
