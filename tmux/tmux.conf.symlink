@@ -1,0 +1,30 @@
+set-option -g prefix C-a
+
+unbind-key C-b
+bind-key C-a send-prefix
+bind-key Space next-window
+bind-key C-Space next-window
+bind-key BSpace previous-window
+bind-key C-BSpace previous-window
+bind-key C-n next-window
+bind-key C-p previous-window
+bind-key a send-keys 'C-a'
+
+bind Escape copy-mode
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
+
+setw -g mode-keys vi
+setw -g mode-mouse on
+setw -g monitor-activity off
+
+set -g status-left ''
+set -g status-right '%Y-%m-%d %H:%M'
+
+set-window-option -g window-status-current-bg green
+set-window-option -g window-status-current-fg black
+
+set -g status-bg black
+set -g status-fg white
+
+bind r source-file ~/.tmux.conf
