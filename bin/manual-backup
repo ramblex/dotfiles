@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rsync -av Music Documents Downloads test-files www afterthought-software year2 year3 Pictures .ssh /Volumes/Manual\ backup
