@@ -81,3 +81,8 @@ precmd() {
   title "zsh" "%m" "%55<...<%~"
   set_prompt
 }
+
+# preexec is called just before any command line is executed
+function preexec() {
+  title "$1" "%m(%35<...<%~)"
+}
