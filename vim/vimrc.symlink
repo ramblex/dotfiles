@@ -8,6 +8,7 @@ call vundle#rc()
 "Bundle 'mattn/gist-vim'
 Bundle 'gmarik/vundle'
 Bundle 'chrismetcalf/vim-yankring'
+Bundle 'altercation/vim-colors-solarized'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'tpope/vim-rails'
 "Bundle 'tpope/vim-markdown'
@@ -67,3 +68,5 @@ set listchars=trail:⋅,tab:▸·
 
 highlight Pmenu ctermbg=Black ctermfg=White 
 highlight PmenuSel ctermbg=Black ctermfg=Yellow 
+
+colorscheme solarized
