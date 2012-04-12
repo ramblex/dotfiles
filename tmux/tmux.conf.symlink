@@ -17,7 +17,7 @@ bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'y' copy-selection
 
 setw -g mode-keys vi
-setw -g mode-mouse on
+setw -g mode-mouse off
 setw -g monitor-activity off
 
 set -g status-left ''
