@@ -70,3 +70,4 @@ highlight Pmenu ctermbg=Black ctermfg=White
 highlight PmenuSel ctermbg=Black ctermfg=Yellow 
 
 colorscheme solarized
+set background=dark
