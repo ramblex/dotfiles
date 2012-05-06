@@ -9,12 +9,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'chrismetcalf/vim-yankring'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'kien/ctrlp.vim'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'tpope/vim-rails'
 "Bundle 'tpope/vim-markdown'
 " vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
 
 filetype on
 filetype plugin on
@@ -56,8 +57,19 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
-nnoremap <leader>b :FufBuffer<cr>
-nnoremap <leader>f :FufFile<cr>
+let g:ctrlp_map = '<leader>b'
+" Set the max files
+let g:ctrlp_max_files = 10000
+
+" Optimize file searching
+if has("unix")
+    let g:ctrlp_user_command = {
+                \   'types': {
+                \       1: ['.git/', 'cd %s && git ls-files']
+                \   },
+                \   'fallback': 'find %s -type f | head -' . g:ctrlp_max_files
+                \ }
+endif
 
 set wrap
 set textwidth=79
