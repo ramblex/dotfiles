@@ -10,6 +10,8 @@ Bundle 'gmarik/vundle'
 Bundle 'chrismetcalf/vim-yankring'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/zencoding-vim'
+Bundle 'vim-scripts/keepcase.vim'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'tpope/vim-rails'
 "Bundle 'tpope/vim-markdown'
@@ -57,6 +59,7 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
+let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:ctrlp_map = '<leader>b'
 " Set the max files
 let g:ctrlp_max_files = 10000
@@ -82,4 +85,4 @@ highlight Pmenu ctermbg=Black ctermfg=White
 highlight PmenuSel ctermbg=Black ctermfg=Yellow 
 
 colorscheme solarized
-set background=dark
+set background=light

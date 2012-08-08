@@ -1,1 +1,1 @@
-export TEXINPUTS=:$HOME/afterthought-software/afterthought/latex
+export TEXINPUTS=:$HOME/code/afterthought/latex
