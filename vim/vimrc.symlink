@@ -18,6 +18,7 @@ Bundle 'vim-scripts/keepcase.vim'
 " vim-scripts repos
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
+Bundle 'YankRing.vim'
 
 filetype on
 filetype plugin on
@@ -84,5 +85,5 @@ set listchars=trail:⋅,tab:▸·
 highlight Pmenu ctermbg=Black ctermfg=White 
 highlight PmenuSel ctermbg=Black ctermfg=Yellow 
 
-colorscheme solarized
+colorscheme default
 set background=light
